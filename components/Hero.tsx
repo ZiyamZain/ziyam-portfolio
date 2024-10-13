@@ -2,12 +2,9 @@ import React from 'react'
 import { Spotlight } from './ui/Spotlight'
 import { TextGenerateEffect } from './ui/TextGenerateEffect'
 import MagicButton from './ui/MagicButton';
+import { FaLocationArrow } from 'react-icons/fa';
 
-const Hero = ({
-  title,icon,position,handleClick,otherClasses
-} : {
-  title:string 
-}) => {
+const Hero = () => {
   return (
     <div className="pb-20 pt-36">
       <div>
@@ -39,7 +36,10 @@ const Hero = ({
           </p>
           <a href="#about">
             <MagicButton
-             title="show my work"/>
+             title="show my work"
+             icon={<FaLocationArrow/>}
+             position='right' 
+             />
           </a>
         </div>
       </div>
